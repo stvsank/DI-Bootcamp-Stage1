@@ -1,13 +1,18 @@
+/*Nous avons besoins de la police google "Roboto" donc nous créons un lien */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*Réinitialisons*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/*Ici nous définissons la famille de police*/
 body {
   font-family: 'Roboto', sans-serif;
 }
-/* header section*/
+/* en-tête*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -15,24 +20,31 @@ body {
     height: 60px;
     padding: 15px;
   }
+
+/*Hauteur de la section principale*/
 main {
    height: calc(100vh - 70px);
    display: flex;
    background-color: #f9f9f9;
  }
-/* Sidebar */ 
+
+/* Barre de dfilement, nous ajustons la hauteur et la largeur.
+Nous masquons aussi cette barre si necessaire*/ 
 .side-bar {
     height: 100%;
     width: 17%;
     background-color: white;
     overflow-y: hidden;
 }
+
+/*Adaptons notre site pour des écran inférieur à 768px*/
 @media (max-width: 768px) {
     .side-bar {
       display: none;
     }
   }
 
+/*Ajustons notre section de gauche*/
 .left {
  display: flex;
  align-items: center;
@@ -43,6 +55,7 @@ main {
  cursor: pointer;
 }
 
+/*Ajustons notre section centrale (Barre de recherche, loupe, microphone)*/
 .search {
  display: flex;
 }
@@ -79,6 +92,8 @@ input:focus {
   padding: 0 7px;
   cursor: pointer;
 }
+
+/*Configurons la barre de navigation (verticale)*/
 .nav {
     width: 100%;
     display: flex;
@@ -109,6 +124,8 @@ hr {
    background-color: #e5e5e5;
    border: none;
  }
+
+ /*Personnalisons la section vidéo*/
  .content {
    background-color: #f9f9f9;
    width: 100%;
@@ -176,6 +193,10 @@ hr {
        display: none;
      }
  }
+
+ /*Rendons l'entrée de recherche un
+  peu plus petite chaque fois que la taille de l'écran 
+ de l'appareil utilisé est inférieure ou égale à 900px.*/
  @media (max-width: 900px) {
      .search input {
        width: 25rem;
