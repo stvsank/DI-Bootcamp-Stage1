@@ -1,16 +1,18 @@
-p{
+.tout{
 	background-color: #ff0099;
 	font-family: Verdana, DejaVu Sans, sans-serif;
 }
+
+.cooler{
+	font-size: 24px;
+}
+
 
 #dxieme{
 	color: blue;
 	font-size: 36px;
 }
 
-#txieme{
-	font-size: 24px;
-}
 
 #qxieme{
 	background-color: rgb(150, 255, 0);
