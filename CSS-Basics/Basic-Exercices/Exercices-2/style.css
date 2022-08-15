@@ -1,0 +1,19 @@
+p{
+	background-color: #ff0099;
+	font-family: Verdana, DejaVu Sans, sans-serif;
+}
+
+#dxieme{
+	color: blue;
+	font-size: 36px;
+}
+
+#txieme{
+	font-size: 24px;
+}
+
+#qxieme{
+	background-color: rgb(150, 255, 0);
+	font-size: 24px;
+	font-weight: bold;
+}
