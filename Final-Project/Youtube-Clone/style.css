@@ -28,7 +28,7 @@ main {
    background-color: #f9f9f9;
  }
 
-/* Barre de dfilement, nous ajustons la hauteur et la largeur.
+/* Barre de défilement, nous ajustons la hauteur et la largeur.
 Nous masquons aussi cette barre si necessaire*/ 
 .side-bar {
     height: 100%;
