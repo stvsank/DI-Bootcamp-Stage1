@@ -1,0 +1,94 @@
+nav{
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#nav{
+	display: inline-block;
+	color: white;
+	margin-right: 50px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+#logo{
+	margin-left: 30px;
+	padding: 5px;
+	width: 50px;
+	height: 40px;
+}
+
+section{
+	display: flex;
+	justify-content: space-between;
+}
+.mannequin{
+	width: 100%;
+	margin-top: 17%;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.alignement{
+	width: 24%;
+	display: inline-block;
+	text-align: center;
+
+}
+
+.info{
+	color: black;
+
+}
+
+body{
+	background-color: #F9F9F9;
+}
+
+.ligne, .prix{
+	display: inline-block;
+}
+
+.prix{
+	font-weight: bold;
+	margin-right: 20px;
+	color: green;
+	font-size: 120%;
+}
+
+.cart{
+	border: 2px solid #A7B6C9;
+	width: 200px;
+	height: auto;
+	padding: 5px;
+	margin-left: 20%;
+	font-size: 110%;
+	color: #A7B6C9;
+}
+
+.ligne{
+	text-decoration: line-through;
+	color: #A7B6C9;
+
+}
+
+.cart:hover{
+	background-color: green;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: left;
+  font-size: 80%;
+}
