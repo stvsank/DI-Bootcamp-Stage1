@@ -74,11 +74,12 @@ li{
 
 #deux{
 	background-color: #F9F9F9;
-	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 #deux>div{
+	display: inline-block;
 	margin-right: 25px;
 	margin-top: 50px;
 	width: 18%;

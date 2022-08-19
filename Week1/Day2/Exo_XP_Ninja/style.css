@@ -1,0 +1,16 @@
+section{
+	display: flex;
+
+}
+
+div{
+	width: 50%;
+}
+
+hr, #ligne{
+	display: inline-block;
+}
+
+hr{
+	width: 10%;
+}
