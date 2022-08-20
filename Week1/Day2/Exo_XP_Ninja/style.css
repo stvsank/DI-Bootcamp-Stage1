@@ -9,10 +9,24 @@ h2{
 	font-size: 50px;
 }
 
-div{
+#ga,#dr{
 	width: 50%;
 	height: 750px;
 	text-align: center;
+}
+
+#dr{
+	background-color: #A101A1;
+	/*box-shadow: inset 20px 20px rgba(0, 0, 0, 0.5);*/
+	color: white;
+}
+
+#dr>h2{
+	margin-top: 20px;
+}
+
+#dr>p{
+	font-size: 25px;
 }
 
 hr, #ligne{
@@ -37,7 +51,6 @@ hr{
 
 .de{
 	margin-right: 100px;
-	color: green;
 }
 
 .tr{
@@ -45,11 +58,11 @@ hr{
 }
 
 #submit{
-	border: 2px solid violet;
+	border: 2px solid #A101A1;
 	width: 73%;
 	margin-left: 12.5%;
 	padding: 8px;
-	background-color: violet;
+	background-color: #A101A1;
 	font-size: 22px;
 }
 
@@ -68,6 +81,26 @@ i{
 	margin-top: 20px;
 }
 
-#dr{
-	
+
+#regis{
+	display: flex;
+	justify-content: center;
+	width: 25%;
+	font-size: 25px;
+	margin-left: 37%;
+	border: 2px solid white;
+	border-radius: 50% / 100%;
+}
+ 
+#regis1{
+	margin-left: 20px;
+}
+
+#regis2{
+	margin-top: 17px;
+}
+
+span{
+	margin-top: 140px;
+	font-size: 100px;
 }
