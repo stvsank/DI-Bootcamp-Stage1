@@ -3,8 +3,16 @@ section{
 
 }
 
+h2{
+	padding-top: 25px;
+	margin-bottom: 0px;
+	font-size: 50px;
+}
+
 div{
 	width: 50%;
+	height: 750px;
+	text-align: center;
 }
 
 hr, #ligne{
@@ -13,4 +21,53 @@ hr, #ligne{
 
 hr{
 	width: 10%;
+}
+
+.input{
+	width: 75%;
+	height: 35px;
+	margin-top: 30px;
+}
+
+.line{
+	margin-top: 30px;
+	display: inline-block;
+}
+
+
+.de{
+	margin-right: 100px;
+	color: green;
+}
+
+.tr{
+	margin-left: 200px;
+}
+
+#submit{
+	border: 2px solid violet;
+	width: 73%;
+	margin-left: 12.5%;
+	padding: 8px;
+	background-color: violet;
+	font-size: 22px;
+}
+
+#pied{
+	text-align: center;
+	margin-top: 180px;
+}
+
+#ga{
+	background-color: #e4e4e7;
+}
+
+i{
+	font-size: 40px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+#dr{
+	
 }
