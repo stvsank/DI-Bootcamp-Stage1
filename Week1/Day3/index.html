@@ -9,61 +9,78 @@
 <body>
 	<section>
 		<div id="section1">
-			<img src="" alt="img_sss">
-			<h1>Steve SANKARA</h1>
-			<h2>Ingénieur des travaux en Informatique</h2>
+			<img src="logo.PNG" alt="img_sss">
+			<h1 class="titre">Steve SANKARA</h1>
+			<h2 class="titre">Ingénieur des travaux en Informatique</h2>
+			<hr style="width: 25%;">
+			<div id="infos">	
+				<p>stvsank@gmail.com</p>
+				<p>(+226) 67 35 11 11 / 73 80 59 03</p>
+				<p>10 juin 2000</p>
+				<p>Catégoties A1, B, C</p>
+				<p>Homme</p>
+				<p>Burkinabè</p>
+			</div>
 			<hr>
-			<p>stvsank@gmail.com</p>
-			<p>(+226) 67 35 11 11 / 73 80 59 03</p>
-			<p>10 juin 2000</p>
-			<p>Catégoties A1, B, C</p>
-			<p>Homme</p>
-			<p>Burkinabè</p>
-			<hr>
-			<h2>Langues</h2>
-			<ul>
-				<li>Français</li>
-				<li>Anglais</li>
-			</ul>
-			<hr>
-			<h2>Centres d'intérêt</h2>
-			<ul>
-				<li>Sport (Basket, Natation)</li>
-				<li>Musique (Instruments de musique)</li>
-				<li>Revues Technologiques</li>
-			</ul>
-
+			<div class="info">
+				<h2>Compétences Informatique</h2>
+				<ul>
+					<li><b>Suite Office</b>(Word, Powerpoint, Excel, Publisher)</li>
+					<li><b>Administration système</b>(Linux et Windows)</li>
+					<li><b>Câblage structuré</b></li>
+					<li><b>Algorithme et programmation</b>(Bash, HTML, CSS, JavaScript, SQL, C, PHP, Python</li>
+					<li><b>Framework (Bootstrap, Flask, Django)</b></li>
+					<li><b>Installation de petit système photocoltaïque</b></li>
+				</ul>
+			</div>
+			<hr>	
+			<div class="info">	
+				<h2>Centres d'intérêt</h2>
+				<ul>
+					<li>Sport (Basket, Natation)</li>
+					<li>Musique (Instruments de musique)</li>
+					<li>Revues Technologiques</li>
+				</ul>
+			</div>
+			<hr>		
+			<div class="info">	
+				<h2>Langues</h2>
+				<ul>
+					<li>Français</li>
+					<li>Anglais</li>
+				</ul>
+			</div>
 		</div>
 		<div id="section2">
 			<div id="un">
-				<h2>FORMATION</h2>
+				<h2 id="coul1">FORMATION</h2>
 				<hr>
 				<div class="un_un">
 					<h3>Licence</h3>
 					<p>2018 - 2021</p>
 				</div>
-				<p>Ecole Supérieure d'Informatique, Ouagadougou.</p>
-				<p>Diplôme obtenu : Ingénieur de travaux en informatique avec la mention très bien</p>
+				<p class="gris">Ecole Supérieure d'Informatique, Ouagadougou.</p>
+				<p class="vert">Diplôme obtenu : Ingénieur de travaux en informatique avec la mention très bien</p>
 				<div class="un_un">
 					<h3>Second Cycle</h3>
 					<p>2015 - 2018</p>
 				</div>
-				<p>Etablissement Gabriel Taborin, Ouagadougou</p>
-				<p>Diplôme obtenu : Baccalauréat série D.</p>
+				<p class="gris">Etablissement Gabriel Taborin, Ouagadougou</p>
+				<p class="vert">Diplôme obtenu : Baccalauréat série D.</p>
 				<h3>Premier cycle</h3>
 				<div class="un_un">
 					<p>Petit Séminaire Saint Cyprien, Kaya.</p>
 					<p>2011 - 2015</p>
 				</div>
-				<p>Sanctionné par : Brevet D'Etudes du premier Cycle.</p>	
+				<p class="vert">Sanctionné par : Brevet D'Etudes du premier Cycle.</p>	
 			</div>
 			<div id="de">
-				<h2>EXPERIENCE PROFESSIONNELLE</h2>
+				<h2 id="coul2">EXPERIENCE PROFESSIONNELLE</h2>
 				<hr>
 				<h3>Bootcamp de codage Full Stack en Python</h3>
 				<div class="de_de">
-					<p>A Sira Labs (Ouagadougou) en colaboration avec Developers Institute, Orange Digital Center et GIZ.</p>
-					<p>août 2022 - octobre 2022</p>
+					<p class="gris">A Sira Labs (Ouagadougou) en colaboration avec Developers Institute, Orange Digital Center et GIZ.</p>
+					<p class="gris">août 2022 - octobre 2022</p>
 				</div>
 				<ul>
 					<li>Apprentissage de langage de programmation et de framework coté (front-end).</li>
@@ -73,15 +90,15 @@
 			</div>
 			<h3>Stage</h3>
 			<div class="de_de">
-				<p>A Internnet Puissance Plus (IP+), Ouagadougou.</p>
-				<p>mars 2022 - juin 2022</p>
+				<p class="gris">A Internnet Puissance Plus (IP+), Ouagadougou.</p>
+				<p class="gris">mars 2022 - juin 2022</p>
 			</div>
 			<ul>
 				<li>Câblage réseau Informatique.</li>
 				<li>Installation de liaison Point à Point.</li>
 				<li>Installation de Lien internet via la technolohie BLR.</li>
 			</ul>
-			<h3>Formation en agriculture Biologique et Agro écologique</h3>
+			<!-- <h3>Formation en agriculture Biologique et Agro écologique</h3>
 			<div class="de_de">
 				<p>A Aube nouvelle (Bobo-Dioulasso) en collaboration avec l'association "BEO-NEERE".</p>
 				<p>janvier 2022 - février 2022</p>
@@ -90,11 +107,11 @@
 				<li>La production des bios pesticides.</li>
 				<li>La production d’engrais bio.</li>
 				<li>La culture de la fraise, de la tomate bio et de l'oignon bio pluviale.</li>
-			</ul>
+			</ul> -->
 			<h3>Projet</h3>
 			<div class="de_de">
-				<p>A l'Ecole Supérieure d'Informatique</p>
-				<p>sept. 2021 - déc. 2021</p>
+				<p class="gris">A l'Ecole Supérieure d'Informatique</p>
+				<p class="gris">sept. 2021 - déc. 2021</p>
 			</div>
 			<p>Thème : " La mise en place d'un point d'accès sans fil avec un Raspberry Pi".</p>
 			<ul>
@@ -103,7 +120,7 @@
 				<li>Dimensionnement solaire et modélisation d'un boitier 3D.</li>
 			</ul>
 			<div id="tr">
-				<h2>COMPETENCES</h2>
+				<h2 id="coul3">COMPETENCES</h2>
 				<hr>
 				<h3>Apprentissage rapide et capacité d'adaptation</h3>
 				<p>De part une formation académique effectuer dans plusieurs ville du Burkina, j'ai pu developpé une bonne capacité d'adaptation.</p>
@@ -111,18 +128,6 @@
 				<p>Planification, estimation des délais et segmentation des tâches avec Gantt</p>
 				<h3>Travail en équipe</h3>
 				<p>Pour un travail d'équipe réussi, je mets l'accent sur l'écoute de mes collaborateurs</p>
-			</div>
-			<div id="qu">
-				<h2>COMPETENCES INFORMATIQUE</h2>
-				<hr>
-				<ul>
-					<li>Suite Office (Word, Powerpoint, Excel, Publisher</li>
-					<li>Administration système (Linux et Windows)</li>
-					<li>Câblage structuré</li>
-					<li>Algorithme et programmation (Bash, HTML, CSS, JavaScript, SQL, C, PHP, Python</li>
-					<li>Framework (Bootstrap, Flask, Django)</li>
-					<li>Installation de petit système photocoltaïque</li>
-				</ul>
 			</div>
 		</div>
 	</section>
