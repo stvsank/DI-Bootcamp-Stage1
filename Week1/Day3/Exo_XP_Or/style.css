@@ -5,7 +5,6 @@
 
 
 body{
-	border: 2px solid red;
 	height: 100%;
 	background-color: grey;
 }
@@ -74,16 +73,19 @@ h2 + p{
 #coul1{
 	background-color: red;
 	padding: 7%;
+	border-radius: 0% 0% 2% 2%;
 }
 
 #coul2{
 	background-color: blue;
 	padding: 7%;
+	border-radius: 0% 0% 2% 2%;
 }
 
 #coul3{
 	background-color: green;
 	padding: 7%;
+	border-radius: 0% 0% 2% 2%;
 }
 
 .col{
@@ -91,6 +93,7 @@ h2 + p{
 	text-align: left;
 	padding: 5%;
 	font-size: 120%;
+	border-radius: 2% 2% 0% 0%;
 }
 
 .col>*{
@@ -109,5 +112,5 @@ h2 + p{
 }
 
 .ord{
-	display: inline-block;
+	border-radius: 5% 5% 5% 5%;
 }
