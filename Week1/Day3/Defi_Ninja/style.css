@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+}
+
+/*Couleurs et tailles*/
+body{
+	background-color: #F7F7F7;
+}
+
+.orange{
+	background-color: orange;
+	border: 10px solid White;
+}
+
+.oranclair{
+	background-color: #F6AE4D;
+	border: 10px solid White;	
+}
+
+.marron{
+	background-color: brown;
+	border: 10px solid White;	
+}
+
+.taille{
+	width: 6vw;
+	height: 12vh;
+}
+
+.noir3{
+	background-color: #CBCAC8;
+	border: 10px solid White;
+}
+.noir2{
+	background-color: #9A9A99;
+	border: 10px solid White;
+}
+.noir1{
+	background-color: #373736;
+	border: 10px solid White;
+}
+.noir{
+	background-color: #000;
+	border: 10px solid White;
+}
+
+.blanc{
+	background-color: white;
+}
+
+.roug1{
+	background-color: rgba(255, 0, 0, 0.5);
+}
+
+.roug{
+	background-color: rgba(255, 0, 0, 1.0);
+}
+
+
+/*Organisation*/
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ord{
+	display: flex;
+	width: 95vw;
+}
+
+.orga{
+	width: 95vw;
+	border: 10px solid black;
+}
+
+.orga2{
+	margin-top:10%;
+}
+
+.orga3{
+	margin-top:10%;
+}
+
