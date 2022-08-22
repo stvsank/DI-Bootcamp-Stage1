@@ -11,8 +11,8 @@ body{
 
 section{
 /*	display: grid;
-	grid-template-rows: repeat(6, 120px);
-	grid-template-columns: 1fr;*/
+	grid-template-rows: 120vh;
+	grid-template-columns: 1vw;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
