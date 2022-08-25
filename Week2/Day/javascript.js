@@ -40,7 +40,7 @@
 
 //Exercice 5 : Devinez Les Réponses #2
 	typeof(15)
-	// Prediction:typeof permet d'afficher le type d'un élement
+	// Prediction:typeof permet d'afficher le type d'un élement/number
 	// Actual: number
 
 	typeof(5.5)
@@ -49,8 +49,8 @@
 
 	typeof(NaN)
 	// Prediction: ?
-	// Actual: ?
-	// Réponse: number
+	// Actual: number
+
 
 	typeof("hello")
 	// Prediction: C'est une chaine de caractère
@@ -65,75 +65,72 @@
 	// Actual: boolean
 
 	"hamburger" + "s"
-	// Prediction: c'est une concaténation
+	// Prediction: c'est une concaténation/hamburgers
 	// Actual: hamburgers
 
 	"hamburgers" - "s"
 	// Prediction: ?
-	// Actual: ?
-	// Réponse: NaN
+	// Actual: NaN
 
 	"1" + "3"
-	// Prediction: c'est une concaténation
+	// Prediction: c'est une concaténation/13
 	// Actual: 13
 
 	"1" - "3"
 	// Prediction: ?
-	// Actual: ? 
-	// Réponse: -2
-
+	// Actual:  -2
 
 	"johnny" + 5
-	// Prediction: concaténation 
+	// Prediction: concaténation/johnny5 
 	// Actual: johnny5
 
 	"johnny" - 5
-	// Prediction: Vu plus haut
+	// Prediction: Vu plus haut/NaN
 	// Actual: NaN
 
 	99 * "hello"
-	// Prediction: Après avoir vu ça plus haut et recherché NaN (Not a Number "legal")
+	// Prediction: Après avoir vu ça plus haut et recherché NaN (Not a Number "legal")/NaN
 	// Actual: NaN
 
 	1 != 1
-	// Prediction: C'est un réponse booléenne que nous aurons. Opérateur de différence
+	// Prediction: C'est un réponse booléenne que nous aurons. Opérateur de différence/False
 	// Actual: False
 
 	1 == "1"
-	// Prediction: Opérateur d'égalité
+	// Prediction: Opérateur d'égalité/true
 	// Actual: true
 
 	1 === "1"
-	// Prediction: compare le type
+	// Prediction: compare le type/false
 	// Actual:false
 
 //Exercice 6 : Devinez Les Réponses #3
 	5 + "34"
-	// Prediction:concacténation
+	// Prediction:concacténation/534
 	// Actual: 534
 
 	5 - "4"
-	// Prediction: concaténation
+	// Prediction: concaténation/1
 	// Actual: 1
 
 	10 % 5
-	// Prediction: modulo
+	// Prediction: modulo/0
 	// Actual: 0
 
 	5 % 10
-	// Prediction: modulo
+	// Prediction: modulo/5
 	// Actual: 5
 
 	"Java" + "Script"
-	// Prediction: concaténation
+	// Prediction: concaténation/JavaScript
 	// Actual: JavaScript
 
 	" " + " "
-	// Prediction: concaténation
+	// Prediction: concaténation/"  "
 	// Actual:"  "
 
 	" " + 0
-	// Prediction: concaténation
+	// Prediction: concaténation/" 0"
 	// Actual:" 0"
 
 	true + true
@@ -141,15 +138,15 @@
 	// Actual:2
 
 	true + false
-	// Prediction: addition
+	// Prediction: addition/1
 	// Actual: 1
 
 	false + true
-	// Prediction: addition
+	// Prediction: addition/1
 	// Actual: 1
 
 	false - true
-	// Prediction: addition
+	// Prediction: addition/-1
 	// Actual: -1
 
 	!true
@@ -157,9 +154,9 @@
 	// Actual: false
 
 	3 - 4
-	// Prediction: soustraction
+	// Prediction: soustraction/-1
 	// Actual: -1
 
 	"Bob" - "bill"
-	// Prediction: concaténation aboutissant à un nombre non reconnu
+	// Prediction: concaténation aboutissant à un nombre non reconnu/NaN
 	// Actual: NaN
