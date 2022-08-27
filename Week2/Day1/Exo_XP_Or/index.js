@@ -21,9 +21,11 @@
 //Exercice 3 : Calculatrice
 	//1//2
 	let num1 = prompt("Entrez le premier numéro");
-	num1 = Number(num1)
+	num1 = Number(num1);
 	//2//4
 	let num2 = prompt("Entrez le deuxième numéro");
-	num2 = Number(num2)
+	num2 = Number(num2);
 	//5
 	alert(`La somme de ${num1} et de ${num2} est ${num1+num2}`);
+
+
