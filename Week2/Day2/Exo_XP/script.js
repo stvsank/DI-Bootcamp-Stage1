@@ -46,4 +46,4 @@
 		console.log(users[0], " et " , users[1] , " sont en ligne");
 	} else {
 				console.log(users[0] + ", " + users[1] + " et" , users.length-2 , "de plus sont en ligne");
-	}
+	} 
