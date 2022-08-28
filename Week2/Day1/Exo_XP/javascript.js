@@ -93,7 +93,7 @@
 	// Actual: NaN
 
 	1 != 1
-	// Prediction: C'est un réponse booléenne que nous aurons. Opérateur de différence/False
+	// Prediction: C'est une réponse booléenne que nous aurons. Opérateur de différence/False
 	// Actual: False
 
 	1 == "1"
