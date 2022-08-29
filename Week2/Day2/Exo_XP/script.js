@@ -35,9 +35,6 @@
 	}
 // Exercice 4 : Discussion De Groupe
 	let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
-	//1
-	console.log("Le nombre d'utilisateur connecté est : " , users.length);
-	//
 	if (users.length == 0) {
 		console.log("Le tableau des d'utilisateur est vide")
 	} else if (users.length == 1) {
