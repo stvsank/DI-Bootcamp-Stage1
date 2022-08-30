@@ -37,6 +37,16 @@
 	}
 
 //Exercice 2 : Codes Postaux
+	//1ère partie
+	let code = prompt("Quel est votre code postal?","xxxxx");
+	let codeNumb =Number(code);
+	if (code.length == 5 &&  codeNumb) {
+		console.log("Succès");
+	} else {
+		console.log("Error");
+	}
+	//2ieme partie
+
 
 
 

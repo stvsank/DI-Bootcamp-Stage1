@@ -66,7 +66,7 @@
         } else {
             console.log("Ni divisible par 2, ni par 5  ", chaine);
         }
-    } else {//si sup. à 0
+    } else {//si sup. ou égal 2
         for (var i = 1; i <= num ; i++) {//num est égale au nombre de zéro de boom
             chaine=chaine+"o";
         }
