@@ -40,6 +40,8 @@
     //1
     let chaine = prompt("Entrez une phrase contenant le mot Nemo");
     //2
+    console.log(chaine);
+    chaine=chaine.split(" ");
     trouver = chaine.indexOf("Nemo");
     //3
     console.log("Chaine trouvée à la position" , trouver);
