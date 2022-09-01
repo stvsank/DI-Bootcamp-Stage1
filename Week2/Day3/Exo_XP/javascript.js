@@ -60,16 +60,80 @@
 		type = Number(numero);
 		if (!type) {
 			console.log("C'est une chaine de caractère qui a été saisie, Entrez un nombre");
-			break;
 		} else {
 			if (numero < 10) {
 				console.log("Entrez un numéro supérieur à 10 ");
+			} else {
 				break;
 			}
 		}
 	}
 
+//Exercice 4 : Gestion Du Bâtiment
+	//1
+	let building = {
+	    numberOfFloors : 4,
+	    numberOfAptByFloor : {
+	        firstFloor : 3,
+	        secondFloor : 4,
+	        thirdFloor : 9,
+	        fourthFloor : 2,
+	    },
+	    nameOfTenants : ["Sarah", "Dan", "David"],
+	    numberOfRoomsAndRent:  {
+	        sarah: [3, 990],
+	        dan :  [4, 1000],
+	        david : [1, 500],
+	    },
+	}
+	//2
+	console.log("The number Of Floors is : " + building.numberOfFloors);
+	//3
+	console.log("The number of apartement rooms of firstFloor and thirdFloor : " + building.numberOfAptByFloor.firstFloor + " and " + building.numberOfAptByFloor.thirdFloor);
+	//4
+	console.log("The name of second tenant is : " + building.nameOfTenants[1]);
+	//5
+	if (building.numberOfRoomsAndRent.sarah[1] + building.numberOfRoomsAndRent.david[1] > building.numberOfRoomsAndRent.dan[1]) {
+		building.numberOfRoomsAndRent.dan[1] = 1200;
+	} else {
+		console.log("Pas d'augmentation");
+	}
+	console.log(building);
 
+//Exercice 5 : Famille
+	//1
+	let famille = {
+		dady : "John",
+		mum : "Mary",
+		son : "Richard",
+	}
+	//2
+	for ( let x in famille) {
+		console.log(x);
+	}
+	//3
+	for (let x in famille) {
+		console.log(famille[x]);
+	}
 
+//Exercice 6
+	let details = {
+	  my: 'name',
+	  is: 'Rudolf',
+	  the: 'raindeer'
+	}
+	for(let x in details){
+		console.log(x,details[x]);
+	}
 
-
+//Exercice 7 : Groupe Secret
+	let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+	//1cd
+	let nom = []
+	for( let x in names){
+		nom[x] = names[x][0];
+	}
+	nom = nom.sort();
+	nom = nom.join("");
+	//2
+	console.log(nom);
