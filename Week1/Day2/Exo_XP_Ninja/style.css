@@ -29,14 +29,13 @@ h2{
 	font-size: 25px;
 }
 
-hr, #ligne{
-	display: inline-block;
+#ligne{
+	display: flex;
 }
 
 hr{
-	width: 10%;
+    width: 60px;
 }
-
 .input{
 	width: 75%;
 	height: 35px;
