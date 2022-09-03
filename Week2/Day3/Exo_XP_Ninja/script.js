@@ -43,6 +43,7 @@
 			console.log("Vous avez échouez, try again");		
 	}
 	findAvg([42,90,86,99,85]);
+	
 	//Bonus
 	function moy(gradesList) {
 		sum = 0;
