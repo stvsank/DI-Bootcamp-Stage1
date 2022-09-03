@@ -1,9 +1,8 @@
 //Exercice 1 : Nombre Aléatoire
 	//1
-	let nombre = Math.random()*2;
-	min = Math.ceil(1);
-	max = Math.floor(101);
-	nombre = Math.floor(Math.random()* (max - min)) + min;
+	let min = Math.ceil(1);
+	let max = Math.floor(101);
+	let nombre = Math.floor(Math.random()* (max - min)) + min;
 	console.log(nombre);
 	//2
 	let pair= "";
