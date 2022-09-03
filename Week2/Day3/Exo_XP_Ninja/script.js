@@ -50,3 +50,13 @@
 			sum += x;
 		return sum/gradesList.length;
 	}
+
+	function isSuccess(gradesList) {
+		moy(gradesList);
+		if (moyenne > 65)
+			console.log("Votre moyenne est :",moyenne + ", vous avez réussi.");
+		else 
+			console.log("Vous avez échouez, try again");
+	}
+
+	isSuccess([42,90,86,99,85]);
