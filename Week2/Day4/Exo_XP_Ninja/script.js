@@ -38,10 +38,43 @@
 		if (mot.length%2 == 0)
 			return false;
 		else
-			for(let i = 0; i < mot.length)
+			for(let i = 0; i < mot.length; i++)
 				if (mot[i] != mot[mot.length-i-1])
 						return false;
 		return true;
 	}
 
-	palindrome("madam")
+	palindrome("Madam");
+
+//Exercice 4 : Plus Grand Nombre
+	function biggestNumberInArray(arrayNumber) {
+		let biggestNumber = 0;
+		if (arrayNumber == [])
+			return 0;
+		for (x of arrayNumber)
+			if (Number(x) && x > biggestNumber)
+				biggestNumber = x;
+		return biggestNumber;
+	}
+
+	biggestNumberInArray([-1,0,3,100, 99, 2, 99]);
+	biggestNumberInArray(['a', 3, 4, 2]);
+	biggestNumberInArray([]);
+
+//Exercice 5 : Éléments Uniques
+	function uniqueListe(tabNumber) {
+		let tabNumber1 = [];
+		for (x of tabNumber){
+			let valide = 0;
+			for (y of tabNumber1)
+				if (tabNumber1 == [])
+					tabNumber1[0]=x;
+				else if (x == y)
+					valide = 1;
+			if (valide==0)
+				tabNumber1[tabNumber1.length]=x;
+		}
+		return tabNumber1;
+	}
+
+	uniqueListe([1,2,3,3,3,3,4,5]);
