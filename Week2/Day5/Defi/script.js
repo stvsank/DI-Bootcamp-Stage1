@@ -10,6 +10,7 @@
 	}
 
 	function entrezNombre() {
+		let nombre;
 		do {
 			nombre = prompt("Entrez un nombre de bouteille pour commencer","99");
 		} while (!verifNombre(nombre))
@@ -18,7 +19,7 @@
 
 //2
 	function chant() {
-		nombre=entrezNombre();
+		let nombre=entrezNombre();
 		console.log("We start the song at",nombre,"bottles")
 		nombre= nombre-1;
 		console.log("-> Take _1_ down, pass it around");
