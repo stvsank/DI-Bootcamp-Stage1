@@ -1,4 +1,8 @@
-age = input("Entrez votre age: ")
+from datetime import datetime
+date = input("Entrez votre date de naissance sous le format DD/MM/YYYY : ")
+date = date.split("/")
+date = int(date[-1])
+age = str(datetime.now().year - date)
 age = int(age[-1])
 gateau = "       _"
 # nombre de tiret avant les bougies
@@ -18,4 +22,6 @@ gateau += """
    |                 |
    ~~~~~~~~~~~~~~~~~~~
 """
+if (date % 4 == 0 and date % 100 != 0) or (date % 4 == 0 and date % 100 == 0 and date % 400 == 0) :
+    print(gateau)
 print(gateau)
