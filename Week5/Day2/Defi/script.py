@@ -1,7 +1,7 @@
 class Pagination:
     def __init__(self, items = [], pageSize = 10):
         self.items = items
-        self.pageSize = pageSize
+        self.pageSize = int(pageSize)
         self.current = 0
 
     def getVisibleItems(self):
