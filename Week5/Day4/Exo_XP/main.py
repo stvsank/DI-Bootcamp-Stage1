@@ -16,7 +16,7 @@ def get_words_from_file():
     with open('mot.txt') as f:
         mot = []
         for line in f:
-            mot.append(line[0:len(line)-1]+' ')
+            mot.append(line[0:len(line)-1])
     return mot
 #4
 def get_random_sentence(length=6):
@@ -24,7 +24,7 @@ def get_random_sentence(length=6):
     sentence = ""
     mots = get_words_from_file()
     for x in range (0,length):
-        sentence += mots[random.randint(0,len(mots))]
+        sentence += mots[random.randint(0,len(mots))] + ' '
     return sentence
 
 
