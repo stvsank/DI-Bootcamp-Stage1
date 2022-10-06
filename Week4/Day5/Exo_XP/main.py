@@ -1,4 +1,3 @@
-
 def display_board(t):
     print(f""""
     Welcome to TIC TAC TOE
@@ -13,13 +12,23 @@ def display_board(t):
     *****************
     """)
 
+
 def player_input(joueur):
     print(f"\tPlayer {joueur}'s turn...\n")
     row = input('\tEnter row: ')
     column = input('\tEnter column: ')
-    row = str(int(row)+-1)
-    column = str(int(column)+-1)
-    return row,column
+    while True :
+        if int(row) > 3 or int(row) < 1 < 1:
+            print("\tline incorrect")
+        elif int(column) > 3 or int(column) < 1:
+            print("\tcolumn incorrect")
+        else:
+            break
+        row = input('\tEnter row: ')
+        column = input('\tEnter column: ')
+    row = str(int(row) -1)#-1 parceque le tableau commence à 0
+    column = str(int(column) -1)
+    return row, column
 
 
 def check_win(t):
@@ -28,18 +37,18 @@ def check_win(t):
     for i in range(0, 2):
         z.append(0)
         x.append(0)
-    for j in range(0,3):
-        for i in range(0,3):
+    for j in range(0, 3):
+        for i in range(0, 3):
             z[i] = 0
             x[i] = 0
-        for i in range(0,3):
-            if t[str(i)][i].lower() == 'x' :
+        for i in range(0, 3):
+            if t[str(i)][i].lower() == 'x':
                 x[0] += 1
             if t[str(j)][i].lower() == 'x':
                 x[1] += 1
             if t[str(i)][j].lower() == 'x':
                 x[2] += 1
-            if t[str(i)][i] == '0' :
+            if t[str(i)][i] == '0':
                 z[0] += 1
             if t[str(j)][i] == '0':
                 z[1] += 1
@@ -52,10 +61,15 @@ def check_win(t):
     return False
 
 
-def play(joueur,t):
-    index = player_input(joueur)
-    ind = int(index[1])
-    t[index[0]][ind] = joueur
+def play(joueur, t):
+    while True:
+        index = player_input(joueur)
+        ind = int(index[1])
+        if t[index[0]][ind] == ' ': # il nous faut vérifer si la case est occupé ou pas
+            t[index[0]][ind] = joueur
+            return t
+        else:
+            print('\tCase occupée')
 
 def main():
     t = {
@@ -67,6 +81,7 @@ def main():
         for i in range(0, 3):
             t[x].append(' ')
 
+    # Nous commençons par le jour X
     joueur = '0'
     while True:
         if joueur == '0':
@@ -74,11 +89,12 @@ def main():
         else:
             joueur = '0'
         display_board(t)
-        play(joueur,t)
+        t = play(joueur, t)
         win = check_win(t)
         display_board(t)
         if win:
             print(win)
             return True
+
 
 main()
