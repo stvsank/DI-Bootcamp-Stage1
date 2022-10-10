@@ -1,10 +1,11 @@
 class Family:
-    members = [
-        {'name':'Michael','age':35,'gender':'Male','is_child':False},
-       {'name':'Sarah','age':32,'gender':'Female','is_child':False}
-    ]
+
     def __init__(self,last_name):
         self.last_name = last_name
+        self.members = [
+            {'name': 'Michael', 'age': 35, 'gender': 'Male', 'is_child': False},
+            {'name': 'Sarah', 'age': 32, 'gender': 'Female', 'is_child': False}
+        ]
 
     def born(self, **kwargs):
         info = {
@@ -39,10 +40,14 @@ fama.family_presentation()
 # Exercice 2 : La Famille Des Indestructibles
 
 class TheIncredibles(Family):
-    members = [
-        {'name':'Michael','age':35,'gender':'Male','is_child':False,'power': 'fly','incredible_name':'MikeFly'},
-        {'name':'Sarah','age':32,'gender':'Female','is_child':False,'power': 'read minds','incredible_name':'SuperWoman'}
-    ]
+    def __init__(self,lastname):
+        super().__init__(lastname)
+        self.members = [
+            {'name': 'Michael', 'age': 35, 'gender': 'Male', 'is_child': False, 'power': 'fly',
+             'incredible_name': 'MikeFly'},
+            {'name': 'Sarah', 'age': 32, 'gender': 'Female', 'is_child': False, 'power': 'read minds',
+             'incredible_name': 'SuperWoman'}
+        ]
     def use_power(self, name):
         for membre in self.members:
             if name == membre['name']:
