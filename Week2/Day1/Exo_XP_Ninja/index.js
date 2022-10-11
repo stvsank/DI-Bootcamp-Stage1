@@ -59,15 +59,7 @@
     let chaine = "b";
     if (num < 2) {
         chaine = "boum";
-        if ((num%2) == 0){//Si divisivle par 2
-            console.log("divisible par 2" , chaine + "!");
-        } else if ((num%5) == 0){//si divisible par 5
-            console.log("divisible par 5" , chaine.toUpperCase() + "!");
-        } else if ((num%5) && (num%2) == 0){//si divisible par 2 et 5
-            console.log(chaine.toUpperCase() + "!");
-        } else {
-            console.log("Ni divisible par 2, ni par 5  ", chaine);
-        }
+        console.log(chaine);
     } else {//si sup. ou égal 2
         for (var i = 1; i <= num ; i++) {//num est égale au nombre de zéro de boom
             chaine=chaine+"o";
