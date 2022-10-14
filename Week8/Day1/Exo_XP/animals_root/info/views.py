@@ -69,8 +69,10 @@ context = {
     ]
 }
 
-def famille(request):
+def famille(request, X):
+    context.update({'X' : X})
     return render(request, "info/famille.html", context)
 
-def animal(request):
+def animal(request, X):
+    context.update({'X' : X})
     return render(request, "info/animal.html", context)

@@ -8,10 +8,12 @@
         <h1>Animaux</h1>
         <ul>
             {% for animal in animals %}
-                {% for key, value in animal.items %}
-                <li>{{ key }} : {{value}}</li>
-                {% endfor %}
-                <br>
+                {% if animal.id == X%}
+                    {% for key, value in animal.items %}
+                    <li>{{ key }} : {{value}}</li>
+                    {% endfor %}
+                    <br>
+                {% endif %}
             {% endfor %}
         </ul>
     </body>
