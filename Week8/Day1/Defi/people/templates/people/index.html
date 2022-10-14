@@ -7,13 +7,13 @@
     <body>
         <h1>Animaux</h1>
         <ul>
-            {% for animal in animals %}
-                {% if animal.id == X%}
-                    {% for key, value in animal.items %}
+            {% for info in people %}
+                {% if info.id == id or id == -1%}
+                    {% for key, value in info.items %}
                         <li>{{ key }} : {{value}}</li>
                     {% endfor %}
-                    <br>
                 {% endif %}
+                <br>
             {% endfor %}
         </ul>
     </body>
