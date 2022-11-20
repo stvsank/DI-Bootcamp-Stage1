@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challange</title>
+</head>
+<body>
+    <script>
+        countNr = 1
+        let rows = 5
+        let printout = '*' 
+        for (let i = 0; i < 9; i++) {
+            for (let e = 0; e < 9; e++) { 
+                if (e == rows) { 
+                    console.log(" ".repeat(rows) + printout.repeat(countNr))
+                    countNr += 2
+                    rows--
+                }
+            }
+        }
+    </script>
+</body>
+</html>
