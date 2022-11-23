@@ -40,7 +40,7 @@
 	        {% for gif in gifs%}
 	        	<p>{{gif.title}}</p>
 	        	<p>{{gif.created_at}}</p>
-	        	<a href="{{gif.url}}" class="btn btn-secondary">Gif</a>
+	        	<img src="{{gif.url}}"><br>
 	        {% endfor %}<br><br><br>
 	<script type="text/javascript">
 		function actif()

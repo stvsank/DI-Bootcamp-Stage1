@@ -5,6 +5,7 @@ from django.db import models
 class Gif(models.Model):
     title = models.CharField(max_length=30)
     url = models.URLField()
+    likes = models.Integerfield()
     uploader_name = models.CharField(max_length=30)
     created_at = models.DateField(auto_now_add=True)
 

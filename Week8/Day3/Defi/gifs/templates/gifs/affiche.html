@@ -40,8 +40,7 @@
 	        {% block content %}
 	        {% for gif in gifs%}
 	        	<p>{{gif.title}}</p>
-	        	<p>{{gif.created_at}}</p>
-	        	<a href="{{gif.url}}" class="btn btn-secondary">Gif</a>
+	        	<img src="{{gif.url}}"><br>
 	        	<button class="btn btn-success">Like</button>
 	        	<button class="btn btn-danger">Like</button>
 	        {% endfor %}<br><br><br>

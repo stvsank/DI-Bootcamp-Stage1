@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway";
@@ -10,15 +10,15 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 .bgcolor{
-  color: #060452;   
+  color: white;   
 }
 
-.image{
+body{
     background-image: url(img2.jpg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
-    height: 600px;
+    /*height: 600px;*/
     
 }
