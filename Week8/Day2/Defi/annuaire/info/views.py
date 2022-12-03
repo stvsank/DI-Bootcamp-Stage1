@@ -1,22 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from info.models import Persons
-from phonenumber_field.formfields import PhoneNumberField
+# from phonenumber_field.formfields import PhoneNumberField
 
 def info(request, phonenumber):
+	a = Persons.objects.filter(phonenumber=phonenumber)
 	context = {
-		'persons' : Persons.objects.all()
+		'persons' : a,
 	}
-	p1 = Persons(name = 'aaa', email = 'aaa@gmail.com', address = 'rue...')
-	p1.phonenumber = phonenumber
-	context.update({'phonenumber': p1.phonenumber})
-	context.update({'name': None})
 	return render(request, "info/index.html", context)
 
 def infos(request, name):
+	a = Persons.objects.filter(name=name)
 	context = {
-		'persons' : Persons.objects.all()
+		'persons' : a,
 	}
-	context.update({'name': name})
-	context.update({'phonenumber': None})
 	return render(request, "info/index.html", context)

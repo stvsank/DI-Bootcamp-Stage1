@@ -7,19 +7,10 @@
     <body>
         <h1>ANNUAIRE</h1>
         <ul>
-            {% for info in persons %}
-                {% if info.phonenumber == phonenumber %}
-                    <li>id: {{info.id}}</li>
-                    <li>name: {{info.name}}</li>
-                    <li>phonenumber: {{info.phonenumber.as_national}}</li>
-                {% endif %}
-                {% if info.name == name %}
-                    <li>id: {{info.id}}</li>
-                    <li>name: {{info.name}}</li>
-                    <li>phonenumber: {{info.phonenumber}}</li>
-                {% endif %}
+                    <li>id: {{persons.id}}</li>
+                    <li>name: {{persons.name}}</li>
+                    <li>phonenumber: {{persons.phonenumber.as_national}}</li>
                 <br>
-            {% endfor %}
         </ul>
     </body>
 </html>
