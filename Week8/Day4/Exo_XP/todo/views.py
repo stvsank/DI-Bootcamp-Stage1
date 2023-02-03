@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from .models import Category, Todo
-from django.shortcuts import render
 from .forms import TodoForm
 
 # Create your views here.
