@@ -1,0 +1,27 @@
+{% extends 'partials/base.html' %}
+	{% block nav %}
+		{% include 'partials/navbar.html'%}
+	{% endblock %}
+
+	{% block content %}
+		<h1>All the new films</h1>
+		<table class="table">
+		  <tbody>
+		{% for x in all %}
+		    <tr>
+		      <td>{{x.title}}<br>{{x.release_date}}<br>{{x.created_in_country}}<br>
+		      {% for a in x.category.all %}
+		  		{{a}}
+		  		{% endfor %}
+		  		</td>
+		    </tr>
+		    <tr>
+		      <td>	{% for a in x.director.all %}
+		  		{{a}}<br>
+		  		{% endfor %}</td>
+		    </tr>
+		{% endfor %}
+		  </tbody>
+		</table>
+	{% endblock %}
+
